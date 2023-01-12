@@ -1,0 +1,87 @@
+*{
+    margin: 0 padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    transition: .2s linear;
+  }
+  
+  .box-container{
+    min-height: 100vh;
+    background:url(Images//background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+  }
+  
+  .box-container .box{
+    height: 400px;
+    width: 200px;
+    border: 8px solid white;
+    box-shadow: 0 3px 5px black;
+   overflow: hidden;
+    margin: 20px 15px ;
+  }
+  
+  
+  .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale();
+  }
+  
+  
+  .box-container .box:hover img{
+    filter: grayscale(0%);
+    transform: scale(1.1);
+  }
+  
+  .box-container .box .info{
+    text-align: center;
+    background: whitesmoke;
+    position: relative;
+    bottom: 60px;
+  }
+  
+  
+  .box-container .box:hover .info{
+    bottom: 160px;
+  }
+  
+  .box-container .box .info .title{
+    padding: 10px 0;
+    font-size: 20px;
+    color: black;
+    text-transform: capitalize;
+  }
+  
+  
+  .box-container .box .info .post{
+    padding: 15px 0;
+    color: gray;
+    text-transform: capitalize;
+    
+  }
+  
+  .box-container .box .info .share{
+    margin-top: 10px;
+    border-top: 1px solid #4444;
+  }
+  
+  
+  .box-container .box .info .share a{
+    font-size: 20px;
+    margin: 20px 10px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  
+  .box-container .box .info .share a:hover{
+    color: blueviolet;
+  
+  }
