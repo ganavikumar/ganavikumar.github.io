@@ -3,7 +3,7 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     transition: .2s linear;
-  }
+}
   
   .box-container{
     min-height: 100vh;
